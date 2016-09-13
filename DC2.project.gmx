@@ -20,6 +20,7 @@
     <script>scripts\Scr_Input.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\Obj_Player</object>
     <object>objects\Obj_Call_Globals_Room</object>
     <object>objects\Obj_Call_Globals_Start</object>
     <objects name="Jacob">
@@ -28,7 +29,6 @@
         <object>objects\Obj_Inv_Screen</object>
       </objects>
     </objects>
-    <object>objects\Obj_Player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
