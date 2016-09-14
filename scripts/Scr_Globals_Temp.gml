@@ -4,11 +4,13 @@ globalvar keymoveup
 globalvar keymovedown
 globalvar keymoveleft
 globalvar keymoveright
+globalvar keyopeninventory
 
 global.keymoveleft = 'A'
 global.keymoveright = 'D'
 global.keymoveup = 'W'
 global.keymovedown = 'S'
+global.keyopeninventory = 'I'
 
 //movement
 globalvar moveup
