@@ -12,6 +12,10 @@
         <sprite>sprites\Obj_Inv_Sprite</sprite>
       </sprites>
     </sprites>
+    <sprites name="Justin">
+      <sprite>sprites\spr_tempfloor</sprite>
+      <sprite>sprites\spr_tempwall</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
