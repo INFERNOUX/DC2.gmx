@@ -20,3 +20,5 @@ global.moveup = 0
 global.movedown = 0
 global.moveright = 0
 global.moveleft = 0
+
+//this line is so we can update
