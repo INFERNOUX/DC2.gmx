@@ -23,6 +23,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\Obj_Player</object>
+    <object>objects\Obj_Step</object>
     <object>objects\Obj_Call_Globals_Room</object>
     <object>objects\Obj_Call_Globals_Start</object>
     <objects name="Jacob">
