@@ -26,9 +26,11 @@ if global.newitem = 1{
             y = y + 64
             }
         if y + sprite_height > 480{
+            global.newitem = 0
             instance_destroy()
             }
         }
     global.inventorylist[itemid,2] = x/64
     global.inventorylist[itemid,3] = (y - 224)/64
+    global.newitem = 0
     }
