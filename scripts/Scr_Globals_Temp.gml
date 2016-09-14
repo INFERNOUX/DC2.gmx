@@ -22,3 +22,10 @@ global.moveup = 0
 global.movedown = 0
 global.moveright = 0
 global.moveleft = 0
+
+//menus
+globalvar pause
+globalvar inventory
+
+global.pause = 0
+global.inventory = 0

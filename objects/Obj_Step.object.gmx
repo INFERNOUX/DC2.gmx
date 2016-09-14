@@ -67,6 +67,11 @@
             <kind>1</kind>
             <string>///inventory
 
+if global.inventory = 1{
+    view_visible[1] = 1
+    }else{
+    view_visible[1] = 0
+    }
 </string>
           </argument>
         </arguments>
