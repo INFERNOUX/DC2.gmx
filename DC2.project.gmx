@@ -21,6 +21,9 @@
         <sprite>sprites\spr_house</sprite>
         <sprite>sprites\spr_path</sprite>
         <sprite>sprites\spr_tempborder</sprite>
+        <sprite>sprites\spr_tavern</sprite>
+        <sprite>sprites\spr_armory</sprite>
+        <sprite>sprites\spr_smith</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -50,6 +53,9 @@
         <object>objects\obj_fountain</object>
         <object>objects\obj_house</object>
         <object>objects\obj_path</object>
+        <object>objects\obj_tavern</object>
+        <object>objects\obj_armory</object>
+        <object>objects\obj_smith</object>
       </objects>
     </objects>
   </objects>
