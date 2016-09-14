@@ -27,11 +27,13 @@
     <scripts name="Jacob">
       <scripts name="Inventory">
         <script>scripts\TEMP_ITEM_THING_FOR_JACOB.gml</script>
-        <script>scripts\Scr_Create_Inventory_Item.gml</script>
       </scripts>
     </scripts>
     <scripts name="Obj_Player">
       <script>scripts\Scr_Obj_Player_Movement.gml</script>
+    </scripts>
+    <scripts name="Obj_Inv_Item">
+      <script>scripts\Scr_Create_Inventory_Item.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

@@ -29,4 +29,6 @@ if global.newitem = 1{
             instance_destroy()
             }
         }
+    global.inventorylist[itemid,2] = x/64
+    global.inventorylist[itemid,3] = (y - 224)/64
     }
