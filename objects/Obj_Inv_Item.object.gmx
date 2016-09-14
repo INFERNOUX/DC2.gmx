@@ -29,6 +29,10 @@
 
 if global.newitem = 1{
     var i = 0
+<<<<<<< HEAD
+    var itemid = 0
+=======
+>>>>>>> refs/remotes/origin/master
     while i &lt; 1000{
         if global.inventorylist[i,1] = 0{
             global.inventorylist[i,1] = 1
@@ -38,11 +42,27 @@ if global.newitem = 1{
             sprite_index = global.inventorylist[i,6]
             image_xscale = 64/sprite_get_width(sprite_index) * global.inventorylist[i,4]
             image_yscale = 64/sprite_get_height(sprite_index) * global.inventorylist[i,5]
+<<<<<<< HEAD
+            itemid = i
+=======
             
+>>>>>>> refs/remotes/origin/master
             }
         i = i + 1
         if global.inventorylist[i,0] = 0 break;
         }
+<<<<<<< HEAD
+    while instance_place(x+32,y+32,Obj_Inv_Item) &lt;&gt; noone{
+        x = x + 64
+        if x = 640{
+            x = 0 
+            y = y + 64
+            }
+        }
+    if x + sprite_width &gt; 640 instance_destroy()
+    if y + sprite_height &gt; 480 instance_destroy()
+=======
+>>>>>>> refs/remotes/origin/master
     }
 </string>
           </argument>
