@@ -19,6 +19,7 @@
     <script>scripts\___INDEX.gml</script>
     <script>scripts\Scr_Input.gml</script>
     <script>scripts\Scr_Globals_Start.gml</script>
+    <script>scripts\Scr_Globals_Temp.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Obj_Player</object>
