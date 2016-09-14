@@ -29,3 +29,8 @@ globalvar inventory
 
 global.pause = 0
 global.inventory = 0
+
+//timer
+globalvar timer
+
+global.timer = 0
