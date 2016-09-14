@@ -34,3 +34,7 @@ global.inventory = 0
 globalvar timer
 
 global.timer = 0
+
+//inventory
+globalvar newitem
+global.newitem = 0
