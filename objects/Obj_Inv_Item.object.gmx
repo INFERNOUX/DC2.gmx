@@ -3,7 +3,7 @@
   <spriteName>Spr_Obj_Temp</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -70,6 +70,7 @@ moving = 0
 itemx = 0
 itemy = 0
 itemid = 0
+z = noone
 </string>
           </argument>
         </arguments>
@@ -135,7 +136,7 @@ itemid = 0
           <argument>
             <kind>1</kind>
             <string>moving = 0
-depth = -1
+depth = -2
 </string>
           </argument>
         </arguments>

@@ -8,8 +8,8 @@ if moving = 0{
         if y + sprite_height >= 480 y = 480 - sprite_height
         if x < 0 x = 0
         if y < 224 y = 224
-        x = round(x/64) * 64
-        y = round((y-224)/64) * 64 + 224
+        x = floor(x/64) * 64
+        y = floor((y-224)/64) * 64 + 224
         
         var i;
         var j;
