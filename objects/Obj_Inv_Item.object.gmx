@@ -11,60 +11,41 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
+        <id>601</id>
+        <kind>0</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>1</kind>
-            <string>///call item variables code
-
-if global.newitem = 1{
-    var i = 0
-<<<<<<< HEAD
-    var itemid = 0
-=======
->>>>>>> refs/remotes/origin/master
-    while i &lt; 1000{
-        if global.inventorylist[i,1] = 0{
-            global.inventorylist[i,1] = 1
-            x = 0
-            y = 224
-            
-            sprite_index = global.inventorylist[i,6]
-            image_xscale = 64/sprite_get_width(sprite_index) * global.inventorylist[i,4]
-            image_yscale = 64/sprite_get_height(sprite_index) * global.inventorylist[i,5]
-<<<<<<< HEAD
-            itemid = i
-=======
-            
->>>>>>> refs/remotes/origin/master
-            }
-        i = i + 1
-        if global.inventorylist[i,0] = 0 break;
-        }
-<<<<<<< HEAD
-    while instance_place(x+32,y+32,Obj_Inv_Item) &lt;&gt; noone{
-        x = x + 64
-        if x = 640{
-            x = 0 
-            y = y + 64
-            }
-        }
-    if x + sprite_width &gt; 640 instance_destroy()
-    if y + sprite_height &gt; 480 instance_destroy()
-=======
->>>>>>> refs/remotes/origin/master
-    }
-</string>
+            <kind>9</kind>
+            <script>Scr_Create_Inventory_Item</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -84,11 +65,59 @@ if global.newitem = 1{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///item sorting code
+            <string>///define variables
+moving = 0
+itemx = 0
+itemy = 0
+itemid = 0
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>Scr_Inventory_Item_Moving</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -105,7 +134,34 @@ if global.newitem = 1{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///item saving code
+            <string>moving = 0
+depth = -1
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>moving = 1
+itemy = mouse_y - y
+itemx = mouse_x - x
+depth = -100
 </string>
           </argument>
         </arguments>
