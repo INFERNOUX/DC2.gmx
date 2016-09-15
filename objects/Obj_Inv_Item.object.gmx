@@ -65,9 +65,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>moving = 0
+            <string>///define variables
+moving = 0
 itemx = 0
 itemy = 0
+itemid = 0
 </string>
           </argument>
         </arguments>
@@ -133,6 +135,7 @@ itemy = 0
           <argument>
             <kind>1</kind>
             <string>moving = 0
+depth = -1
 </string>
           </argument>
         </arguments>
@@ -158,6 +161,7 @@ itemy = 0
             <string>moving = 1
 itemy = mouse_y - y
 itemx = mouse_x - x
+depth = -100
 </string>
           </argument>
         </arguments>
