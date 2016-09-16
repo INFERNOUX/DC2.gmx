@@ -5,10 +5,10 @@ if global.itemmoving = itemid{
     x = floor(x/64) * 64
     y = floor((y - 224) / 64) * 64 + 224
     if x + sprite_width >= 640 x = 640 - sprite_width
-    if y + sprite_width >= 480 y = 480 - sprite_width
+    if y + sprite_height >= 480 y = 480 - sprite_height
     if y < 224 y = 224
     if x < 0 x = 0
-    if instance_place(x - 16, y - 16, Obj_Inv_Item) <> noone and global.itemmoving <> noone{
+    if instance_place(x, y, Obj_Inv_Item) <> noone and global.itemmoving <> noone{
         x = global.inventorylist[itemid,2] * 64
         y = global.inventorylist[itemid,3] * 64 + 224
         }else{
