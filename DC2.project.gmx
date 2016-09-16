@@ -35,8 +35,8 @@
     </scripts>
     <scripts name="Obj_Inv_Item">
       <script>scripts\Scr_Create_Inventory_Item.gml</script>
-      <script>scripts\Scr_Inventory_Item_Moving.gml</script>
       <script>scripts\Scr_Selection_Box.gml</script>
+      <script>scripts\Scr_Item_Moving.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

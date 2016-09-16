@@ -11,6 +11,30 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///define variables
+itemid = 0
+mousedistx = 0
+mousedisty = 0
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>601</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -49,32 +73,6 @@
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///define variables
-moving = 0
-itemx = 0
-itemy = 0
-itemid = 0
-z = noone
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -93,7 +91,7 @@ z = noone
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>Scr_Inventory_Item_Moving</script>
+            <script>Scr_Item_Moving</script>
           </argument>
           <argument>
             <kind>0</kind>
@@ -135,8 +133,9 @@ z = noone
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>moving = 0
-depth = -2
+            <string>///stop itemmoving
+global.itemmoving = -1
+depth = -1
 </string>
           </argument>
         </arguments>
@@ -159,10 +158,11 @@ depth = -2
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>moving = 1
-itemy = mouse_y - y
-itemx = mouse_x - x
-depth = -100
+            <string>///start moving sequence
+global.itemmoving = itemid
+mousedistx = mouse_x - x
+mousedisty = mouse_y - y
+depth = -1000
 </string>
           </argument>
         </arguments>
