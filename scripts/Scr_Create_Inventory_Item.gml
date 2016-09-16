@@ -2,7 +2,6 @@ if global.newitem = 1{
     y = 224
     x = 0
     var i = 0
-    itemid = 0
     while i < 1000{
         if global.inventorylist[i,1] = 0 and global.inventorylist[i,0] = 1{
             itemid = i
@@ -33,4 +32,6 @@ if global.newitem = 1{
     global.inventorylist[itemid,2] = x/64
     global.inventorylist[itemid,3] = (y - 224)/64
     global.newitem = 0
+    lastx = x
+    lasty = y
     }

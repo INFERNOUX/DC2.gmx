@@ -1,3 +1,8 @@
+if global.movingitem <> noone and lastxyset = 0{
+    lastx = x
+    lasty = y
+    lastxyset = 1
+    }
 if moving = 1{
     x = mouse_x - itemx
     y = mouse_y - itemy
@@ -32,7 +37,7 @@ if moving = 0{
                                 y = y + 64
                                 }
                             if y + sprite_height > 480{
-                                instance_destroy()
+                                global.itemfailedmove = 1
                                 }
                             }
                         }
@@ -42,9 +47,11 @@ if moving = 0{
             i = i + 64
             j = y
             }
-        global.inventorylist[itemid,2] = x/64
-        global.inventorylist[itemid,3] = (y - 224)/64
+        if global.itemfailedmove = 0 global.inventorylist[itemid,2] = x/64
+        if global.itemfailedmove = 0 global.inventorylist[itemid,3] = (y - 224)/64
         itemx = 0
         itemy = 0
         }
+    if global.itemfailedmove = 1 x = lastx
+    if global.itemfailedmove = 1 y = lasty
     }

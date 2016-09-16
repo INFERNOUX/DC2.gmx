@@ -37,4 +37,9 @@ global.timer = 0
 
 //inventory
 globalvar newitem
+globalvar itemmoving
+globalvar itemfailedmove
+
 global.newitem = 0
+global.itemmoving = -1
+global.itemfailedmove = 0
