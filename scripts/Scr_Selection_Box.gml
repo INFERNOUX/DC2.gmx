@@ -29,7 +29,7 @@ if moving = 2{
     x = floor(z.x/64) * 64
     if x + sprite_width >= 640 x = 640 - sprite_width
     y = floor((z.y - 224)/64) * 64 + 224
-    if y + sprite_width >= 480 y = 480 - sprite_width
+    if y + sprite_height >= 480 y = 480 - sprite_height
     if y < 224 y = 224
     if x < 0 x = 0
     if mouse_button <> mb_left{
