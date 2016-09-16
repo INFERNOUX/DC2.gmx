@@ -51,8 +51,10 @@
         <object>objects\Obj_Inv_Selectionbox</object>
       </objects>
     </objects>
+    <object>objects\Obj_Next_Dungeon</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Dev_Room__LEAVE_TOP</room>
     <room>rooms\Dungeon</room>
   </rooms>
   <help>
