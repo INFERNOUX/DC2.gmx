@@ -6,11 +6,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\Spr_Player_Temp</sprite>
     <sprites name="Jacob">
       <sprites name="inventory">
         <sprite>sprites\Spr_Obj_Temp</sprite>
         <sprite>sprites\Spr_Obj_Inv</sprite>
         <sprite>sprites\Spr_Inv_Selection_Box</sprite>
+      </sprites>
+      <sprites name="Item Drops">
+        <sprite>sprites\Spr_Item_Drop</sprite>
+        <sprite>sprites\Spr_Item_Drop_Background</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -44,17 +49,23 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\Obj_Call_Globals_Start</object>
-    <object>objects\Obj_Call_Globals_Room</object>
-    <object>objects\Obj_Step</object>
-    <object>objects\Obj_Player</object>
+    <objects name="Globals/Starts">
+      <object>objects\Obj_Start_Rooms</object>
+      <object>objects\Obj_Call_Globals_Start</object>
+      <object>objects\Obj_Call_Globals_Room</object>
+      <object>objects\Obj_Step</object>
+    </objects>
     <objects name="Inventory">
       <object>objects\Obj_Inv_Selectionbox</object>
       <object>objects\Obj_Inv_Item</object>
       <object>objects\Obj_Inv_Screen</object>
     </objects>
+    <objects name="Item Drops">
+      <object>objects\Obj_Item_Drop</object>
+      <object>objects\Obj_Item_Drop_Background</object>
+    </objects>
+    <object>objects\Obj_Player</object>
     <object>objects\Obj_Next_Dungeon</object>
-    <object>objects\Obj_Start_Rooms</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Dev_Room_LEAVE_TOP</room>
