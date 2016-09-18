@@ -116,6 +116,43 @@ mousedisty = 0
         </arguments>
       </action>
     </event>
+    <event eventtype="6" enumb="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///drop items
+instance_create(Obj_Player.x,Obj_Player.y,Obj_Item_Drop)
+global.droppingitemnumber = itemid
+with instance_place(Obj_Player.x,Obj_Player.y,Obj_Item_Drop){
+    iteminfo[0] = global.inventorylist[global.droppingitemnumber,0]
+    iteminfo[1] = 0
+    iteminfo[2] = global.inventorylist[global.droppingitemnumber,2]
+    iteminfo[3] = global.inventorylist[global.droppingitemnumber,3]
+    iteminfo[4] = global.inventorylist[global.droppingitemnumber,4]
+    iteminfo[5] = global.inventorylist[global.droppingitemnumber,5]
+    iteminfo[6] = global.inventorylist[global.droppingitemnumber,6]
+    iteminfo[7] = global.inventorylist[global.droppingitemnumber,7]
+    }
+global.droppingitemnumber = noone
+instance_destroy()
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
