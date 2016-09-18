@@ -54,6 +54,8 @@ image_alpha = .4
 if instance_place(x,y,Obj_Item_Drop) &lt;&gt; noone{
 image_index = instance_place(x,y,Obj_Item_Drop).image_index
 image_speed = instance_place(x,y,Obj_Item_Drop).image_speed
+x = instance_place(x,y,Obj_Item_Drop).x
+y = instance_place(x,y,Obj_Item_Drop).y
 if image_alpha &gt; .4{
     z = 0
     }

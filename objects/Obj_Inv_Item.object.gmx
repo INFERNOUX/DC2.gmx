@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///define variables
-itemid = 0
+itemid = noone
 mousedistx = 0
 mousedisty = 0
 </string>
@@ -145,6 +145,9 @@ with instance_place(Obj_Player.x,Obj_Player.y,Obj_Item_Drop){
     iteminfo[5] = global.inventorylist[global.droppingitemnumber,5]
     iteminfo[6] = global.inventorylist[global.droppingitemnumber,6]
     iteminfo[7] = global.inventorylist[global.droppingitemnumber,7]
+    
+    x = Obj_Player.x + irandom_range(-15,15)
+    y = Obj_Player.y + irandom_range(-15,15)
     }
 global.droppingitemnumber = noone
 instance_destroy()

@@ -1,7 +1,7 @@
 if global.itemmoving = itemid{
     x = mouse_x - mousedistx
     y = mouse_y - mousedisty
-    }else{
+    }else if itemid <> noone{
     x = floor(x/64) * 64
     y = floor((y - 224) / 64) * 64 + 224
     if x + sprite_width >= 640 x = 640 - sprite_width
