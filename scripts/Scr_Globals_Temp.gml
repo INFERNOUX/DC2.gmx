@@ -41,10 +41,12 @@ global.timer = 0
 globalvar newitem
 globalvar itemmoving
 globalvar itemfailedmove
+globalvar droppingitemnumber
 
 global.newitem = 0
 global.itemmoving = -1
 global.itemfailedmove = 0
+global.droppingitemnumber = noone
 
 //+use
 globalvar use

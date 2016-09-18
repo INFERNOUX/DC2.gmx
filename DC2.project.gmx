@@ -47,6 +47,9 @@
       <script>scripts\Scr_Start_Spawn_Everything.gml</script>
       <script>scripts\Scr_Setup_Views.gml</script>
     </scripts>
+    <scripts name="Dungeon Generation">
+      <script>scripts\Scr_Generator_Create_Event.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Globals/Starts">
@@ -54,6 +57,10 @@
       <object>objects\Obj_Call_Globals_Start</object>
       <object>objects\Obj_Call_Globals_Room</object>
       <object>objects\Obj_Step</object>
+    </objects>
+    <objects name="Dungeon Generation">
+      <object>objects\Obj_Dungeon_Floor</object>
+      <object>objects\Obj_Dungeon_Generator</object>
     </objects>
     <objects name="Inventory">
       <object>objects\Obj_Inv_Selectionbox</object>
