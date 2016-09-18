@@ -16,10 +16,10 @@ if global.newitem = 1{
         if global.inventorylist[i,0] = 1{
             if global.inventorylist[i,1] = 0{
                 instance_create(0,0,Obj_Inv_Item)
-                global.newitem = 0
                 }
             }
         if global.inventorylist[i,0] = 0 break;
         i = i + 1
         }
+    global.newitem = 0
     }
