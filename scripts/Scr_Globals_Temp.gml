@@ -5,12 +5,14 @@ globalvar keymovedown
 globalvar keymoveleft
 globalvar keymoveright
 globalvar keyopeninventory
+globalvar keyuse
 
 global.keymoveleft = 'A'
 global.keymoveright = 'D'
 global.keymoveup = 'W'
 global.keymovedown = 'S'
 global.keyopeninventory = 'I'
+global.keyuse = 'E'
 
 //movement
 globalvar moveup
@@ -43,3 +45,8 @@ globalvar itemfailedmove
 global.newitem = 0
 global.itemmoving = -1
 global.itemfailedmove = 0
+
+//+use
+globalvar use
+
+global.use = 0

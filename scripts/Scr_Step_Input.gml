@@ -26,27 +26,17 @@ if keyboard_check(ord(global.keyopeninventory)) = 1{
         }
     }
 
+//+use
+if keyboard_check(ord(global.keyuse)) = 1{
+    global.use = 1
+    }else{
+    global.use = 0
+    }
+
 //delete me (AT JACOB)
 if keyboard_check(ord('L')) = 1{
     if global.timer = 0{
-        var i = 0
-        var works = 0
-        while i < 1000{
-            if global.inventorylist[i,0] = 0 works = 1
-            if works = 0 i = i + 1
-            if works = 1 break;
-            }
-        if works = 1{
-            global.inventorylist[i,0] = 1
-            global.inventorylist[i,1] = 0
-            global.inventorylist[i,2] = 0
-            global.inventorylist[i,3] = 0
-            global.inventorylist[i,4] = irandom_range(1,3)
-            global.inventorylist[i,5] = irandom_range(1,3)
-            global.inventorylist[i,6] = Spr_Obj_Temp
-            global.inventorylist[i,7] = 1
-            global.newitem = 1
-            }
+        instance_create(Obj_Player.x + irandom_range(-15,15), Obj_Player.y + irandom_range(-15,15),Obj_Item_Drop)
         global.timer = 10
         }
     }
