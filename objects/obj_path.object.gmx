@@ -19,8 +19,12 @@
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
+<<<<<<< HEAD
   <PhysicsShapePoints>
     <point>0,0</point>
     <point>64,64</point>
   </PhysicsShapePoints>
+=======
+  <PhysicsShapePoints/>
+>>>>>>> refs/remotes/origin/master
 </object>

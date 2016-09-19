@@ -6,10 +6,16 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\Spr_Player_Temp</sprite>
     <sprites name="Jacob">
       <sprites name="inventory">
-        <sprite>sprites\Obj_Temp</sprite>
-        <sprite>sprites\Obj_Inv_Sprite</sprite>
+        <sprite>sprites\Spr_Obj_Temp</sprite>
+        <sprite>sprites\Spr_Obj_Inv</sprite>
+        <sprite>sprites\Spr_Inv_Selection_Box</sprite>
+      </sprites>
+      <sprites name="Item Drops">
+        <sprite>sprites\Spr_Item_Drop</sprite>
+        <sprite>sprites\Spr_Item_Drop_Background</sprite>
       </sprites>
     </sprites>
     <sprites name="Justin">
@@ -30,22 +36,42 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\___INDEX.gml</script>
-    <script>scripts\Scr_Input.gml</script>
-    <script>scripts\Scr_Globals_Start.gml</script>
     <script>scripts\Scr_Globals_Temp.gml</script>
+    <script>scripts\Scr_Globals_Start.gml</script>
+    <scripts name="Step Event">
+      <script>scripts\Scr_Step_Input.gml</script>
+      <script>scripts\Scr_Step_Inventory.gml</script>
+      <script>scripts\Scr_Step_Counter.gml</script>
+    </scripts>
+    <scripts name="Jacob">
+      <scripts name="Inventory">
+        <script>scripts\TEMP_ITEM_THING_FOR_JACOB.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Obj_Player">
+      <script>scripts\Scr_Obj_Player_Movement.gml</script>
+    </scripts>
+    <scripts name="Obj_Inv_Item">
+      <script>scripts\Scr_Create_Inventory_Item.gml</script>
+      <script>scripts\Scr_Selection_Box.gml</script>
+      <script>scripts\Scr_Item_Moving.gml</script>
+    </scripts>
+    <scripts name="Obj_Start_Rooms">
+      <script>scripts\Scr_Start_Spawn_Everything.gml</script>
+      <script>scripts\Scr_Setup_Views.gml</script>
+    </scripts>
+    <scripts name="Dungeon Generation">
+      <script>scripts\Scr_Generator_Create_Event.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\Obj_Player</object>
-    <object>objects\Obj_Step</object>
-    <object>objects\Obj_Call_Globals_Room</object>
-    <object>objects\Obj_Call_Globals_Start</object>
-    <objects name="Jacob">
-      <objects name="Inventory">
-        <object>objects\Obj_Inv_Item</object>
-        <object>objects\Obj_Inv_Screen</object>
-      </objects>
+    <objects name="Globals/Starts">
+      <object>objects\Obj_Start_Rooms</object>
+      <object>objects\Obj_Call_Globals_Start</object>
+      <object>objects\Obj_Call_Globals_Room</object>
+      <object>objects\Obj_Step</object>
     </objects>
+<<<<<<< HEAD
     <objects name="Justin">
       <object>objects\obj_border</object>
       <objects name="Town">
@@ -62,6 +88,28 @@
   <rooms name="rooms">
     <room>rooms\Town</room>
     <room>rooms\room0</room>
+=======
+    <objects name="Dungeon Generation">
+      <object>objects\Obj_Dungeon_Floor</object>
+      <object>objects\Obj_Dungeon_Generator</object>
+    </objects>
+    <objects name="Inventory">
+      <object>objects\Obj_Inv_Selectionbox</object>
+      <object>objects\Obj_Inv_Item</object>
+      <object>objects\Obj_Inv_Screen</object>
+    </objects>
+    <objects name="Item Drops">
+      <object>objects\Obj_Item_Drop</object>
+      <object>objects\Obj_Item_Drop_Background</object>
+    </objects>
+    <object>objects\Obj_Player</object>
+    <object>objects\Obj_Next_Dungeon</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\Dev_Room_LEAVE_TOP</room>
+    <room>rooms\Dungeon</room>
+    <room>rooms\Starting_Town</room>
+>>>>>>> refs/remotes/origin/master
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

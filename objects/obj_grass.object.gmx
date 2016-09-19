@@ -3,7 +3,11 @@
   <spriteName>spr_grass</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
+<<<<<<< HEAD
   <depth>30</depth>
+=======
+  <depth>0</depth>
+>>>>>>> refs/remotes/origin/master
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -19,8 +23,12 @@
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
+<<<<<<< HEAD
   <PhysicsShapePoints>
     <point>0,0</point>
     <point>64,64</point>
   </PhysicsShapePoints>
+=======
+  <PhysicsShapePoints/>
+>>>>>>> refs/remotes/origin/master
 </object>
