@@ -12,3 +12,7 @@ while i < 1000{
     i = i + 1
     n = 0
     }
+
+//dungeon generation
+
+globalvar dungeonlist

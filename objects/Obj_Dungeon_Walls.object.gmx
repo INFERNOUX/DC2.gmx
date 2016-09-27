@@ -25,55 +25,47 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = 1280
-y = 960
-var i = 0
-global.dungeonroomsize = irandom_range(6,15)
+            <string>var shortxy = global.dungeonxy[global.dungeonx,global.dungeony]
+var tile = global.dungeonlist[shortxy,global.dungeondepth]
+if tile &lt;&gt; -4{
+var sprite;
 
-while x &lt; room_width{
-    while y &lt; room_height{
-        global.dungeonx = (x - 1280) / (64*global.tilesize)
-        global.dungeony = (y - 960) / (64*global.tilesize)
-        global.dungeonxy[global.dungeonx,global.dungeony] = i
-        if global.dungeonx &gt; global.dungeongreatestx global.dungeongreatestx = global.dungeonx
-        if global.dungeony &gt; global.dungeongreatesty global.dungeongreatesty = global.dungeony
-        i = i + 1
-        y = y + 64*global.tilesize
-        }
-    y = 960
-    x = x + 64*global.tilesize
-    }
+if tile = HUD sprite = "T_HUD_"
+if tile = HLR sprite = "T_HLR_"
+if tile = HDL sprite = "T_HDL_"
+if tile = HUL sprite = "T_HUL_"
+if tile = HDR sprite = "T_HDR_"
+if tile = HUR sprite = "T_HUR_"
+if tile = RTC sprite = "T_RTC_"
+if tile = RBC sprite = "T_RBC_"
+if tile = RRC sprite = "T_RRC_"
+if tile = RBC sprite = "T_RBC_"
+if tile = RLC sprite = "T_RLC_"
+if tile = RLW sprite = "T_RLW_"
+if tile = RTW sprite = "T_RTW_"
+if tile = RRW sprite = "T_RRW_"
+if tile = RBW sprite = "T_RBW_"
+if tile = RBL sprite = "T_RBL_"
+if tile = RTL sprite = "T_RTL_"
+if tile = RBR sprite = "T_RBR_"
+if tile = RTR sprite = "T_RTR_"
+if tile = NUN sprite = "T_NUN_"
+if tile = CDL sprite = "T_CDL_"
+if tile = CDR sprite = "T_CDR_"
+if tile = CTL sprite = "T_CTL_"
+if tile = CTR sprite = "T_CTR_"
 
-x = 1280
-y = 960
-
-while x &lt; room_width{
-    while y &lt; room_height{
-        global.dungeonx = (x - 1280) / (64*global.tilesize)
-        global.dungeony = (y - 960) / (64*global.tilesize)
-        script_execute(Scr_Generation)
-        y = y + 64*global.tilesize
-        }
-    y = 960
-    x = x + 64*global.tilesize
-    }
-
-x = 1280
-y = 960
-
-while x &lt; room_width{
-    while y &lt; room_height{
-        global.dungeonx = (x - 1280) / (64*global.tilesize)
-        global.dungeony = (y - 960) / (64*global.tilesize)
-        instance_create(x,y,Obj_Dungeon_Walls)
-        y = y + 64*global.tilesize
-        }
-    y = 960
-    x = x + 64*global.tilesize
-    }
-
-Obj_Player.x = 1280
-Obj_Player.y = 960
+if tile &lt;&gt; RNO{
+sprite = string_insert("Dev",sprite,7)
+sprite = asset_get_index(sprite)
+sprite_index = sprite
+image_xscale = 64/sprite_get_width(sprite_index) * global.tilesize
+image_yscale = 64/sprite_get_height(sprite_index) * global.tilesize
+}
+instance_create(x,y,Obj_Dungeon_Floor)
+}else{
+instance_destroy()
+}
 </string>
           </argument>
         </arguments>

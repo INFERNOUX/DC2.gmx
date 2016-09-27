@@ -52,3 +52,23 @@ global.droppingitemnumber = noone
 globalvar use
 
 global.use = 0
+
+//dungeon generation
+globalvar tilesize
+globalvar dungeonx
+globalvar dungeony
+globalvar dungeondepth
+globalvar dungeonxy
+globalvar dungeontypes
+globalvar dungeontype
+globalvar dungeonroomsize
+globalvar dungeongreatestx
+globalvar dungeongreatesty
+
+global.tilesize = 2 //its 4 x 64
+global.dungeonx = 0
+global.dungeony = 0
+global.dungeondepth = 0
+global.dungeontypes = 1
+global.dungeongreatestx = 0
+global.dungeongreatesty = 0

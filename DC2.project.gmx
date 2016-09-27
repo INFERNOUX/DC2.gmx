@@ -17,7 +17,35 @@
         <sprite>sprites\Spr_Item_Drop</sprite>
         <sprite>sprites\Spr_Item_Drop_Background</sprite>
       </sprites>
+      <sprites name="Dungeon">
+        <sprites name="Dev">
+          <sprite>sprites\T_HUD_Dev</sprite>
+          <sprite>sprites\T_HLR_Dev</sprite>
+          <sprite>sprites\T_HDL_Dev</sprite>
+          <sprite>sprites\T_HDR_Dev</sprite>
+          <sprite>sprites\T_HUR_Dev</sprite>
+          <sprite>sprites\T_HUL_Dev</sprite>
+          <sprite>sprites\T_RTC_Dev</sprite>
+          <sprite>sprites\T_RRC_Dev</sprite>
+          <sprite>sprites\T_RBC_Dev</sprite>
+          <sprite>sprites\T_RLC_Dev</sprite>
+          <sprite>sprites\T_RLW_Dev</sprite>
+          <sprite>sprites\T_RTW_Dev</sprite>
+          <sprite>sprites\T_RRW_Dev</sprite>
+          <sprite>sprites\T_RBW_Dev</sprite>
+          <sprite>sprites\T_RBL_Dev</sprite>
+          <sprite>sprites\T_RTL_Dev</sprite>
+          <sprite>sprites\T_RTR_Dev</sprite>
+          <sprite>sprites\T_RBR_Dev</sprite>
+          <sprite>sprites\T_NUN_Dev</sprite>
+          <sprite>sprites\T_CDR_Dev</sprite>
+          <sprite>sprites\T_CDL_Dev</sprite>
+          <sprite>sprites\T_CTL_Dev</sprite>
+          <sprite>sprites\T_CTR_Dev</sprite>
+        </sprites>
+      </sprites>
     </sprites>
+    <sprite>sprites\Spr_Solid_Blue_Dev</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -47,7 +75,7 @@
       <script>scripts\Scr_Setup_Views.gml</script>
     </scripts>
     <scripts name="Dungeon Generation">
-      <script>scripts\Scr_Generator_Create_Event.gml</script>
+      <script>scripts\Scr_Generation.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -58,8 +86,9 @@
       <object>objects\Obj_Step</object>
     </objects>
     <objects name="Dungeon Generation">
-      <object>objects\Obj_Dungeon_Floor</object>
+      <object>objects\Obj_Dungeon_Walls</object>
       <object>objects\Obj_Dungeon_Generator</object>
+      <object>objects\Obj_Dungeon_Floor</object>
     </objects>
     <objects name="Inventory">
       <object>objects\Obj_Inv_Selectionbox</object>
@@ -78,6 +107,40 @@
     <room>rooms\Dungeon</room>
     <room>rooms\Starting_Town</room>
   </rooms>
+  <constants number="32">
+    <constant name="HUD">0</constant>
+    <constant name="HLR">1</constant>
+    <constant name="HDL">2</constant>
+    <constant name="HUL">3</constant>
+    <constant name="HDR">4</constant>
+    <constant name="HUR">5</constant>
+    <constant name="RTC">6</constant>
+    <constant name="RBC">7</constant>
+    <constant name="RRC">8</constant>
+    <constant name="RBC">9</constant>
+    <constant name="RLC">10</constant>
+    <constant name="RLW">11</constant>
+    <constant name="RTW">12</constant>
+    <constant name="RRW">13</constant>
+    <constant name="RBW">14</constant>
+    <constant name="RBL">15</constant>
+    <constant name="RTL">16</constant>
+    <constant name="RBR">17</constant>
+    <constant name="RTR">18</constant>
+    <constant name="NUN">19</constant>
+    <constant name="CDL">20</constant>
+    <constant name="CDR">21</constant>
+    <constant name="CTL">22</constant>
+    <constant name="CTR">23</constant>
+    <constant name="RNO">24</constant>
+    <constant name="opent">0</constant>
+    <constant name="openb">1</constant>
+    <constant name="opena">2</constant>
+    <constant name="openl">0</constant>
+    <constant name="openr">1</constant>
+    <constant name="blocked">3</constant>
+    <constant name="openc">4</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
